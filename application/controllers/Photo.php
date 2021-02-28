@@ -65,7 +65,7 @@ class Photo extends CI_Controller {
                  $msg=  $this->input->post('msg');
                  
                
-                 $this->Studio->add_contact($name,$mail,$serve,$pack,$msg)
+                 $this->Studio->add_contact($name,$mail,$serve,$pack,$msg);
          }     
                          
                                             
