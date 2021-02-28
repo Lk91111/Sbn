@@ -46,7 +46,7 @@
                         <!-- Contact Form -->
                         <div class="col-md-6 animate-box" data-animate-effect="fadeInUp">
                             <h3 class="annie-contact-heading">Contact Form</h3>
-                            <p>Interested to work wiht us?</p>
+                            <p>Interested to work with us?</p>
                             <form method="post" class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
