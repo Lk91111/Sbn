@@ -95,31 +95,29 @@ Warm Regards.</p>
                         <div class="col-md-12 mb-30 animate-box" data-animate-effect="fadeInUp">
                             <h3 class="annie-contact-heading">Leave Feedback</h3>
                         </div>
-                        <div class="col-md-2 animate-box" data-animate-effect="fadeInUp">
-                            <fieldset>
-                                <div class="avatar-container"><i class="fa fa-user"></i>
-                                    <div class="placeholder js-preview" data-blank=""></div>
-                                    <label class="button"><i class="fa fa-camera"></i>
-                                        <input class="-hidden" accept="<?=  base_url()?>assets/image/jpeg,image/png" type="file">
-                                    </label>
-                                </div>
-                            </fieldset>
-                        </div>
+                        
                         <div class="col-md-7 animate-box" data-animate-effect="fadeInUp">
-                            <form method="post" class="row">
+                            <form method="post" class="row" action="<?=  base_url('Photo/feedback')?>>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Name" required> </div>
+                                        <input type="text" name="name" class="form-control" placeholder="Your Name" required> </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Link to your social network account"> </div>
+                                        <input type="text" name="link" class="form-control" placeholder="Link to your social network account"> </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Your Feedback"></textarea>
+                                        <textarea name="msg" id="message" cols="30" rows="7" class="form-control" placeholder="Your Feedback"></textarea>
                                     </div>
                                 </div>
+			<div class="col-md-12">
+                                            <div class="input-group-prepend"><span class="input-group-text">Upload</span></div>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" name="img">
+                                                <label class="custom-file-label" >Choose Images</label>
+                                            </div>
+                                        </div>											 
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <input type="submit" class="btn btn-contact" value="Submit Feedback"> </div>
