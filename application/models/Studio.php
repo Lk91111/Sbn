@@ -14,5 +14,11 @@ class Studio extends CI_Controller {
         $query=$this->db->query("select * from feed");
 	return $query->result();
     }
+    public function add_contact($name,$mail,$serve,$pack,$msg)
+	{
+		$data=array('name'=>$name,'mail'=>$mail,'serve'=>$serve,'pack'=>$pack,'msg'=>$msg);
+        $this->db->insert('contact',$data);
+	}
+	
     
 }
