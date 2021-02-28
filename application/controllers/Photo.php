@@ -32,7 +32,7 @@ class Photo extends CI_Controller {
                         $msg=  $this->input->post('msg');
                         move_uploaded_file($temp_name, $target_path);
                         $this->Studio->add_feed($name,$link,$msg,$file_name);
-                    redirect('feedback');
+                    redirect('feed_back');
             }
              $result['values']=$this->Studio->select_feed();
                 
