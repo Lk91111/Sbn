@@ -117,7 +117,8 @@ Warm Regards.</p>
                                                 <input type="file" class="custom-file-input" name="img">
                                                 <label class="custom-file-label" >Choose Images</label>
                                             </div>
-                                        </div>											 
+                                        </div>	
+				<div style="color: lightcoral;"><?=$msg?></div>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <input type="submit" name="submit" class="btn btn-contact" value="Submit Feedback"> </div>
