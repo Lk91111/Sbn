@@ -96,8 +96,8 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 mt-60 text-center animate-box" data-animate-effect="fadeInUp"> <span class="heading-meta">Interested to work with us?</span>
-                            <div class="form-group">
-                                <input type="submit" class="btn btn-contact" value="Contact With Us"> </div>
+                            <div class="form-group"><a href="<?=base_url()?>contact">
+                                <input type="submit" class="btn btn-contact" value="Contact With Us"> </div></a>
                         </div>
                     </div>
                 </div>
