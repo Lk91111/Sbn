@@ -34,9 +34,9 @@ class Photo extends CI_Controller {
                         $this->Studio->add_feed($name,$link,$msg,$file_name);
                     
             }
-            
+             $result['values']=$this->Studio->select_feed();
                 
-		$this->load->view('user/feedback');
+		$this->load->view('user/feedback',$result);
                
 		
 	}
