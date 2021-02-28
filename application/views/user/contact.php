@@ -50,50 +50,38 @@
                             <form method="post" class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name" required> </div>
+                                        <input  name="name" type="text" class="form-control" placeholder="Name" required> </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Email"> </div>
+                                        <input  name="mail" type="text" class="form-control" placeholder="Email"> </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label for="cars"> Service:-</label>
-                                        <select style="background-color: dark-grey; ">  
-                                                  <option value="Select">Select</option>}  
+                                        <label for="style"> </label>
+                                        <select name="serve" style="background-color: #1b1b1b; width:260px; color:#6c757d;">  
+                                                  <option value="Select">Services</option>}  
                                                    <option value="Vineet">Vineet Saini</option>  
-                                                   <option value="Sumit">Sumit Sharma</option>  
-                                                   <option value="Dorilal">Dorilal Agarwal</option>  
-                                                   <option value="Omveer">Omveer Singh</option>  
-                                                   <option value="Rohtash">Rohtash Kumar</option>  
-                                                   <option value="Maneesh">Maneesh Tewatia</option>  
-                                                   <option value="Priyanka">Priyanka Sachan</option>  
-                                                   <option value="Neha">Neha Saini</option>  
+                                                   
                                          </select>    </div>
                                 </div> 
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label for="cars">  Packages:-</label>
-                                         <select>  
-                                                  <option value="Select">Select</option>}  
+                                        <label for="serve">  </label>
+                                         <select name="pack" style="background-color: #1b1b1b; width:260px;color:#6c757d;">  
+                                                  <option  value="Select">Packages</option>} 
                                                    <option value="Vineet">Vineet Saini</option>  
-                                                   <option value="Sumit">Sumit Sharma</option>  
-                                                   <option value="Dorilal">Dorilal Agarwal</option>  
-                                                   <option value="Omveer">Omveer Singh</option>  
-                                                   <option value="Rohtash">Rohtash Kumar</option>  
-                                                   <option value="Maneesh">Maneesh Tewatia</option>  
-                                                   <option value="Priyanka">Priyanka Sachan</option>  
-                                                   <option value="Neha">Neha Saini</option>  
+                                        
                                          </select>   </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                                        <textarea name="msg" id="message" cols="30" rows="7" class="form-control" placeholder="Message & Address"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        <input type="submit" class="btn btn-contact" value="Submit"> </div>
+                                        <input name="submit" type="submit" class="btn btn-contact" value="Submit"> </div>
                                 </div>
                             </form>
                         </div>
