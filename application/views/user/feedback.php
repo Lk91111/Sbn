@@ -97,7 +97,7 @@ Warm Regards.</p>
                         </div>
                         
                         <div class="col-md-7 animate-box" data-animate-effect="fadeInUp">
-                            <form method="post" class="row" action="<?=  base_url('Photo/feedback')?>>
+                            <form method="post" class="row" action="<?=  base_url('Photo/feedback')?> enctype="multipart/form-data">
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <input type="text" name="name" class="form-control" placeholder="Your Name" required> </div>
