@@ -53,9 +53,26 @@ class Photo extends CI_Controller {
 		$this->load->view('user/blog');
 	}
         public function contact()
-	{
+        {
+            
+         if($this->input->post('submit'))
+         {
+                              
+                 $name=  $this->input->post('name');
+                 $mail=  $this->input->post('name');
+                 $serve=  $this->input->post('name');
+                 $pack=  $this->input->post('name');
+                 $msg=  $this->input->post('name');
+                 
+               
+                 $this->Studio->add_contact($name,$mail,$serve,$pack,$msg)
+         }     
+                         
+                                            
+                
+	
 		$this->load->view('user/contact');
-	}
-       
+	
+        }
        
 }
