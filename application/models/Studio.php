@@ -8,5 +8,11 @@ class Studio extends CI_Controller {
 		$data=array('name'=>$name,'link'=>$link,'msg'=>$msg,'img'=>$img);
         $this->db->insert('feed',$data);
 	}
+	
+	 public function select_feed()
+    {
+        $query=$this->db->query("select * from feed");
+	return $query->result();
+    }
     
 }
