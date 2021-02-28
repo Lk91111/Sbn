@@ -120,7 +120,7 @@ Warm Regards.</p>
                                         </div>											 
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="submit" class="btn btn-contact" value="Submit Feedback"> </div>
+                                        <input type="submit" name="submit" class="btn btn-contact" value="Submit Feedback"> </div>
                                 </div>
                             </form>
                         </div>
