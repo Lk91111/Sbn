@@ -49,7 +49,7 @@ class Photo extends CI_Controller {
                 $err=null;
             }
                 
-		$this->load->view('user/feedback');
+		$this->load->view('user/feedback',$err);
                
 		
 	}
