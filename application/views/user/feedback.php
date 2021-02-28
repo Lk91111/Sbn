@@ -118,10 +118,10 @@ Warm Regards.</p>
                                     </div>
                                 </div>
 			<div class="col-md-12">
-                                            <div class="input-group-prepend"><span class="input-group-text">Upload</span></div>
-                                            <div class="custom-file">
+                                           
+                                            <div class="custom-file ">
                                                 <input type="file" class="custom-file-input" name="img">
-                                                <label class="custom-file-label" >Choose Images</label>
+                                                <label class="custom-file-label"style="background-color: #1b1b1b; width:645px;color:#6c757d;" >Choose Images</label>
                                             </div>
                                         </div>	
 				
