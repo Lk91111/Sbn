@@ -30,15 +30,21 @@
                                 <div class="comments-area" id="comments">
                                     <a href="#feedback"><p style="border-bottom: 1px dashed #999; width: 120px;">Leave feedback</p></a>
                                     <ol class="comment-list">
+					    <?php
+					    	foreach($values as $val){
+					    ?>
                                         <li class="comment">
                                             <div class="comment-body">
-                                                <div class="comment-author vcard"> <img class="avatar photo" src="<?=  base_url()?>assets/images/feedback/1.jpg" alt="">
-                                                    <h3 class="name">Eleanor & Stefano</h3> </div>
-                                                <div class="comment-meta"><a href="#0">instagram.com/username</a></div>
-                                                <p>Thank you so so so so much!! The photos are absolutely beautiful! We love every single one of them. Thank you so much for capturing the day so perfectly! It is incredible </p>
+                                                <div class="comment-author vcard"> <img class="avatar photo" src="<?=  base_url()?>assets/images/feed/<?=$val->img?>" alt="">
+                                                    <h3 class="name"><?=$val->name?></h3> </div>
+                                                <div class="comment-meta"><a href="#0"><?=$val->link?></a></div>
+                                                <p><?=$val->msg?></p>
                                             </div>
                                         </li>
-                                        <li class="comment">
+					    <?php
+						}
+					    ?>
+<!--                                         <li class="comment">
                                             <div class="comment-body">
                                                 <div class="comment-author vcard"> <img class="avatar photo" src="<?=  base_url()?>assets/images/feedback/2.jpg" alt="">
                                                     <h3 class="name">Freida & Pablo</h3> </div>
@@ -48,8 +54,8 @@ We love our photos and how you’ve captured every precious moment of our ceremo
 We can’t thank you enough. It was wonderful to meet you, you have left a lasting memory with us.
 Thanking once again. Take care and regards,</p>
                                             </div>
-                                        </li>
-                                        <li class="comment">
+                                        </li> -->
+<!--                                         <li class="comment">
                                             <div class="comment-body">
                                                 <div class="comment-author vcard"> <img class="avatar photo" src="<?=  base_url()?>assets/images/feedback/3.jpg" alt="">
                                                     <h3 class="name">Olivia & Enrico</h3> </div>
@@ -66,8 +72,8 @@ Warm Regards.</p>
                                                 <div class="comment-meta"><a href="#0">facebook.com/username</a></div>
                                                 <p>Thank you so so much for the photos! We have had a good look through them and we love them so much. You have been so wonderful to work with and throughout the whole process. We are so impressed with your professionalism and the quality of the work you do and the photos is phenomenal</p>
                                             </div>
-                                        </li>
-                                        <li class="comment">
+                                        </li> -->
+<!--                                         <li class="comment">
                                             <div class="comment-body">
                                                 <div class="comment-author vcard"> <img class="avatar photo" src="<?=  base_url()?>assets/images/feedback/5.jpg" alt="">
                                                     <h3 class="name">Vanessa & Chris</h3> </div>
@@ -84,7 +90,7 @@ Warm Regards.</p>
                                                    Just got a glimpse of one of the photos on Instagram and really thrilled with it .
                                                    Thank you so much again. Also our guests had only great things to say about you.</p>
                                             </div>
-                                        </li>
+                                        </li> -->
                                         
                                     </ol>
                                 </div>
