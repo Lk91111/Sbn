@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class admin extends CI_Controller {
     function __construct() {
         parent::__construct();
-	    $this->load->model('adminm');
+	    $this->load->model('Adminm');
         session_start();
         
     }
@@ -354,8 +354,8 @@ class admin extends CI_Controller {
 	}
         public function view_dest()
 	{
-		$this->load->model('adminm');
-            $result['products_data']=$this->adminm->select_dest();
+		$this->load->model('Adminm');
+            $result['products_data']=$this->Adminm->select_dest();
 	if(!isset($_SESSION['uname']))
                 {
                     $errr['msg']=NULL;
