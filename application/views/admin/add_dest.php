@@ -26,7 +26,7 @@
                                                 <input type="text" class="form-control" name="city" placeholder="Enter city"></div>
                                             <div class="form-group">
                                                 <label class="text-muted" >Service</label>
-                                                <input type="text" class="form-control" name="state"  placeholder="Enter service"></div>
+                                                <input type="text" class="form-control" name="serv"  placeholder="Enter service"></div>
                                             <div class="form-group">
                                                 <label class="text-muted" >Description</label>
                                                 <input type="text" class="form-control" name="descr"  placeholder="Enter description"></div>
