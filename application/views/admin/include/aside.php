@@ -29,64 +29,8 @@
                                          Home</span>
                             </a>
                         </li>
-                        <li class="nav-header hidden-folded">
-                            <span class="text-muted">
-                                        Manage</span></li>
-
-                          <li>
-                            <a href="<?=  base_url('admin/user')?>" class="">
-                                <span class="nav-icon text-success">
-                                                                    <i data-feather="users">
-
-                                                                    </i>
-                                                                </span>
-                                <span class="nav-text">
-                                                                 Users</span>
-                                
-                            </a>
-                            
-                        </li>
-                        <li>
-                            <a href="#" class="">
-                                <span class="nav-icon text-info">
-                                                                    <i data-feather="inbox">
-
-                                                                    </i>
-                                                                </span>
-                                <span class="nav-text">
-                                                                 Cars</span>
-                                <span class="nav-caret">
-
-                                                                  </span>
-                            </a>
-                            <ul class="nav-sub nav-mega">
-                                <li>
-                                    <a href="<?=  base_url('admin/add_car')?>" class="">
-                                         <span class="nav-icon text-info">
-                                                                    <i data-feather="plus">
-
-                                                                    </i>
-                                                                </span>
-                                        <span class="nav-text">
-                                                                            Add</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="<?= base_url('admin/view_car')?>" class="">
-                                        <span class="nav-icon text-info">
-                                                                    <i data-feather="align-left">
-
-                                                                    </i>
-                                                                </span>
-                                        <span class="nav-text">
-                                                                            View</span>
-                                    </a>
-                                </li>
-                                
+                      
                         
-                           
-                        </ul>
-                        </li>
                           <li>
                             <a href="#" class="">
                                 <span class="nav-icon text-info">
