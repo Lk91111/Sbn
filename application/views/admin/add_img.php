@@ -19,7 +19,7 @@
             <div class="card-header" style="text-align: center; text-transform: uppercase; font-size: 26px;margin-top: 20px;"><strong>Add Destination</strong></div>
             <div class="col-md-6 container" style="margin-top: 30px;">
                                 <div class="card">
-                                    
+                                     
                                     <div class="card-body">
                                         <form action="<?=  base_url('admin/add_dest')?>" method="post" enctype="multipart/form-data">
                                             <div class="form-group">
