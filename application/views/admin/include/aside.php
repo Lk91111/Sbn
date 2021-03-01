@@ -115,41 +115,10 @@
                         </ul>
                         </li>
                           <li>
-                            <a href="#" class="">
-                                <span class="nav-icon text-primary">
-                                                                    <i data-feather="package">
-
-                                                                    </i>
-                                                                </span>
-                                <span class="nav-text">
-                                                                 Accessories</span>
-                                <span class="nav-caret">
-
-                                                                  </span>
-                            </a>
+                           
                             <ul class="nav-sub nav-mega">
-                                <li>
-                                    <a href="<?=  base_url('admin/add_acc')?>" class="">
-                                         <span class="nav-icon text-info">
-                                                                    <i data-feather="plus">
-
-                                                                    </i>
-                                                                </span>
-                                        <span class="nav-text">
-                                                                            Add</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="<?= base_url('admin/view_acc')?>" class="">
-                                        <span class="nav-icon text-info">
-                                                                    <i data-feather="align-left">
-
-                                                                    </i>
-                                                                </span>
-                                        <span class="nav-text">
-                                                                            View</span>
-                                    </a>
-                                </li>
+                                
+                                
                                 
                         
                            
@@ -169,17 +138,7 @@
                                                                   </span>
                             </a>
                             <ul class="nav-sub nav-mega">
-                                <li>
-                                    <a href="<?=  base_url('admin/add_cont')?>" class="">
-                                         <span class="nav-icon text-info">
-                                                                    <i data-feather="plus">
-
-                                                                    </i>
-                                                                </span>
-                                        <span class="nav-text">
-                                                                            Add</span>
-                                    </a>
-                                </li>
+                               
                                 <li>
                                     <a href="<?= base_url('admin/view_con')?>" class="">
                                         <span class="nav-icon text-info">
