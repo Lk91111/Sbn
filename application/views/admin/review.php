@@ -43,10 +43,9 @@
                                             </th>
                                             <th class="text-muted">Id</th>
                                             <th class="text-muted">Name</th>
-                                            <th class="text-muted">Email</th>
-                                            <th class="text-muted">Title</th>
-                                            <th class="text-muted">Comment</th>
-                                            <th class="text-muted">Star</th>
+                                            
+                                            <th class="text-muted">link</th>
+                                            <th class="text-muted">comment</th>
                                             <th class="text-muted">Date </th>
                                             <th class="text-muted">Action</th>
                                          </tr>
@@ -68,20 +67,15 @@
                                                 <div class="avatar-group"><?=$value->name?></div>
                                             </td>
                                              <td>
-                                                <div class="avatar-group"><?=$value->email?></div>
+                                                <div class="avatar-group"><?=$value->link?></div>
                                             </td>
                                             <td>
-                                                <div class="avatar-group"><?=$value->title?></div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar-group"><?=$value->com?></div>
-                                            </td>
-                                            <td>
-                                                <div class="avatar-group"><?=$value->star?></div>
+                                                <div class="avatar-group"><?=$value->msg?></div>
                                             </td>
                                             <td>
                                                 <div class="avatar-group"><?=$value->datetimes?></div>
                                             </td>
+                                           
                                             <td>
                                                  <div class="avatar-group">
                                                      <a href="<?=  base_url('admin/delete_review')?>?q=<?=$value->id?>"><span class="nav-icon text-info">
