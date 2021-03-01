@@ -29,64 +29,17 @@
                     <div class="row align-items-stretch annie-photos" id="annie-section-photos">
                         <div class="col-12">
                             <div class="row align-items-stretch">
+			        <?php
+			        	foreach(array_reverse($gallery) as $photo)
+				{
+			        ?>
                                 <div class="col-12 col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInUp">
-                                    <a href="<?=  base_url()?>assets/images/gallery/01.jpg" class="d-block annie-photo-item" data-caption="Potrait Photo" data-fancybox="gallery"> <img src="images/gallery/01.jpg" alt="Image" class="img-fluid">
+                                    <a href="<?=  base_url()?>assets/images/dest/<?=$photo->img?>" class="d-block annie-photo-item" data-caption="Potrait Photo" data-fancybox="gallery"> <img src="images/gallery/01.jpg" alt="Image" class="img-fluid">
                                     </a>
                                 </div>
-                                <div class="col-12 col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInUp">
-                                    <a href="<?=  base_url()?>assets/images/gallery/02.jpg" class="d-block annie-photo-item" data-caption="Wedding Photo" data-fancybox="gallery"> <img src="images/gallery/02.jpg" alt="Image" class="img-fluid">
-                                        
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInUp">
-                                    <a href="<?=  base_url()?>assets/images/gallery/03.jpg" class="d-block annie-photo-item" data-caption="Potrait Photo" data-fancybox="gallery"> <img src="images/gallery/03.jpg" alt="Image" class="img-fluid">
-                                        
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInUp">
-                                    <a href="<?=  base_url()?>assets/images/gallery/04.jpg" class="d-block annie-photo-item" data-caption="Potrait Photo" data-fancybox="gallery"> <img src="images/gallery/04.jpg" alt="Image" class="img-fluid">
-                                        
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInUp">
-                                    <a href="<?=  base_url()?>assets/images/gallery/05.jpg" class="d-block annie-photo-item" data-caption="Family Photo" data-fancybox="gallery"> <img src="images/gallery/05.jpg" alt="Image" class="img-fluid">
-                                        
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInUp">
-                                    <a href<?=  base_url()?>assets/images/gallery/06.jpg" class="d-block annie-photo-item" data-caption="Sport Photo" data-fancybox="gallery"> <img src="images/gallery/06.jpg" alt="Image" class="img-fluid">
-                                        
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInUp">
-                                    <a href<?=  base_url()?>assets/images/gallery/07.jpg" class="d-block annie-photo-item" data-caption="Potrait Photo" data-fancybox="gallery"> <img src="images/gallery/07.jpg" alt="Image" class="img-fluid">
-                                        
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInUp">
-                                    <a href="<?=  base_url()?>assets/images/gallery/08.jpg" class="d-block annie-photo-item" data-caption="Potrait Photo" data-fancybox="gallery"> <img src="images/gallery/08.jpg" alt="Image" class="img-fluid">
-                                        
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInUp">
-                                    <a href="<?=  base_url()?>assets/images/gallery/09.jpg" class="d-block annie-photo-item" data-caption="Baby Photo" data-fancybox="gallery"> <img src="images/gallery/09.jpg" alt="Image" class="img-fluid">
-                                        
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInUp">
-                                    <a href="<?=  base_url()?>assets/images/gallery/10.jpg" class="d-block annie-photo-item" data-caption="Wedding Photo" data-fancybox="gallery"> <img src="images/gallery/10.jpg" alt="Image" class="img-fluid">
-                                        
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInUp">
-                                    <a href="<?=  base_url()?>assets/images/gallery/11.jpg" class="d-block annie-photo-item" data-caption="Baby Photo" data-fancybox="gallery"> <img src="images/gallery/11.jpg" alt="Image" class="img-fluid">
-                                        
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInUp">
-                                    <a href="<?=  base_url()?>assets/images/gallery/12.jpg" class="d-block annie-photo-item" data-caption="Potrait Photo" data-fancybox="gallery"> <img src="images/gallery/12.jpg" alt="Image" class="img-fluid">
-                                    </a>
-                                </div>
+                                <?php
+				}
+			        ?>
                             </div>
                         </div>
                     </div>
