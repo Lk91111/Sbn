@@ -70,7 +70,7 @@
                                                 <div class="avatar-group"><?=$value->city?></div>
                                             </td>
                                              <td>
-                                                <div class="avatar-group"><?=$value->state?></div>
+                                                <div class="avatar-group"><?=$value->serv?></div>
                                             </td>
                                             <td>
                                                 <div class="avatar-group"><?=$value->descr?></div>
