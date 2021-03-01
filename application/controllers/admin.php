@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class admin extends CI_Controller {
     function __construct() {
         parent::__construct();
-	    $this->load->model('Adminm');
+	   
         session_start();
         
     }
@@ -99,7 +99,7 @@ class admin extends CI_Controller {
                         if($pwd==$cpwd)
                         {
                         move_uploaded_file($temp_name, $target_path);
-                        $this->adminm->add_team($name,$uname,$email,$pn,$age,$post,$pwd,$cpwd,$addr,$file_name);
+                        $this->Studio->add_team($name,$uname,$email,$pn,$age,$post,$pwd,$cpwd,$addr,$file_name);
                         redirect('admin/view_team');
                         
                         }
@@ -131,7 +131,7 @@ class admin extends CI_Controller {
             {
                 $file_name=$_FILES['img']['name'];
                 $temp_name=$_FILES['img']['tmp_name'];
-                $target_path='C:/xampp/htdocs/Sbn/assets/images/dest/'.$file_name;
+                $target_path='C:/xampp/htdocs/xpedia/assets/images/dest/'.$file_name;
                 $filetype=  strtolower(pathinfo($target_path,PATHINFO_EXTENSION));
                 if($filetype!='jpg'&& $filetype!='png'&& $filetype!='jpeg')
                 {
@@ -146,7 +146,7 @@ class admin extends CI_Controller {
                         $state=  $this->input->post('state');
                         $descr=  $this->input->post('descr');
                         move_uploaded_file($temp_name, $target_path);
-                        $this->adminm->add_dest($city,$state,$descr,$file_name);
+                        $this->Studio->add_dest($city,$state,$descr,$file_name);
                     
                         redirect('admin/view_dest');
                     }
@@ -174,7 +174,7 @@ class admin extends CI_Controller {
                  $pn=  $this->input->post('pn');
                  $email=  $this->input->post('email');
                  $addr=  $this->input->post('addr');
-                 $this->adminm->add_cont($pn,$email,$addr);
+                 $this->Studio->add_cont($pn,$email,$addr);
             }
             if(!isset($_SESSION['uname']))
                 {
@@ -202,13 +202,13 @@ class admin extends CI_Controller {
         public function delete_con()
         {
             $id=$this->input->get('q');
-	$this->adminm->delete_con($id);
+	$this->Studio->delete_con($id);
 	redirect('admin/view_con');
         }
         public function edit_con()
 	{
             $id=$this->input->get('q');
-            $result['data']=$this->adminm->display_con($id);
+            $result['data']=$this->Studio->display_con($id);
             
             $this->load->view('admin/edit_cont',$result);
 	}
@@ -221,7 +221,7 @@ class admin extends CI_Controller {
                 $pn=$this->input->post('pn');
 		$email=$this->input->post('email');
 		$addr=$this->input->post('addr');
-		$this->adminm->update_con($pn,$email,$addr,$id);
+		$this->Studio->update_con($pn,$email,$addr,$id);
 		redirect('admin/view_con');
 		}  else {
                     echo 'error';
@@ -235,7 +235,7 @@ class admin extends CI_Controller {
                  
                  $code=  $this->input->post('code');
                  $value=  $this->input->post('value');
-                 $this->adminm->add_coupon($code,$value);
+                 $this->Studio->add_coupon($code,$value);
             }
 		if(!isset($_SESSION['uname']))
                 {
@@ -270,7 +270,7 @@ class admin extends CI_Controller {
                         $price=  $this->input->post('price');
                         $com=  $this->input->post('com');
                         move_uploaded_file($temp_name, $target_path);
-                        $this->adminm->add_acc($name,$price,$com,$file_name);
+                        $this->Studio->add_acc($name,$price,$com,$file_name);
                     
                         redirect('admin/view_acc');
                     }
@@ -319,7 +319,7 @@ class admin extends CI_Controller {
                         $seat=  $this->input->post('seat');
                         $price=  $this->input->post('price');
                         move_uploaded_file($temp_name, $target_path);
-                        $this->adminm->add_car($con,$maker,$model,$trans,$year,$ft,$ecc,$door,$seat,$price,$file_name);
+                        $this->Studio->add_car($con,$maker,$model,$trans,$year,$ft,$ecc,$door,$seat,$price,$file_name);
                         
                         redirect('admin/view_car');
                     }
@@ -341,7 +341,7 @@ class admin extends CI_Controller {
 	}
          public function view_team()
 	{
-                $result['products_data']=$this->adminm->select_team($_SESSION['uname']);
+                $result['products_data']=$this->Studio->select_team($_SESSION['uname']);
                 if(!isset($_SESSION['uname']))
                 {
                     $errr['msg']=NULL;
@@ -354,11 +354,11 @@ class admin extends CI_Controller {
 	}
         public function view_dest()
 	{
-		$this->load->model('Adminm');
-            $result['products_data']=$this->Adminm->select_dest();
+		
+            $result['products_data']=$this->Studio->select_dest();
 	if(!isset($_SESSION['uname']))
                 {
-                    $errr['msg']=NULL;  
+                    $errr['msg']=NULL;
                     $this->load->view('admin/signin',$errr);
                 }
                 else 
@@ -368,7 +368,7 @@ class admin extends CI_Controller {
 	}
         public function view_acc()
 	{
-                $result['data']=$this->adminm->select_acc();
+                $result['data']=$this->Studio->select_acc();
 		if(!isset($_SESSION['uname']))
                 {
                     $errr['msg']=NULL;
@@ -382,7 +382,7 @@ class admin extends CI_Controller {
        
         public function view_coupon()
 	{
-                $result['data']=$this->adminm->select_coupon();
+                $result['data']=$this->Studio->select_coupon();
 		if(!isset($_SESSION['uname']))
                 {
                     $errr['msg']=NULL;
@@ -395,7 +395,7 @@ class admin extends CI_Controller {
 	}
         public function view_car()
 	{
-                $result['products_data']=$this->adminm->select_car();
+                $result['products_data']=$this->Studio->select_car();
 		if(!isset($_SESSION['uname']))
                 {
                     $errr['msg']=NULL;
@@ -412,7 +412,7 @@ class admin extends CI_Controller {
 	}
         public function user()
 	{
-                $result['data']=  $this->adminm->select_user();
+                $result['data']=  $this->Studio->select_user();
 		$this->load->view('admin/user_home',$result);
 	}
         public function review()
@@ -424,32 +424,32 @@ class admin extends CI_Controller {
                 }
                 else 
                     {
-                    $result['data']=  $this->adminm->feed_datas();
+                    $result['data']=  $this->Studio->feed_datas();
 		$this->load->view('admin/review',$result);
                     }
 	}
         public function delete_review()
 	{
                 $id=  $this->input->get('q');
-                $this->adminm->delete_review($id);
+                $this->Studio->delete_review($id);
 		redirect('admin/review');
 	}
         public function delete_user()
 	{
                 $id=  $this->input->get('q');
-                $this->adminm->delete_user($id);
+                $this->Studio->delete_user($id);
 		redirect('admin/user');
 	}
         public function delete_reviews()
 	{
                 $id=  $this->input->get('q');
-                $this->adminm->delete_reviews($id);
+                $this->Studio->delete_reviews($id);
 		redirect('admin/reviews');
 	}
         public function tick_review()
 	{
                 $id=  $this->input->get('q');
-                $this->adminm->tick_review($id);
+                $this->Studio->tick_review($id);
 		redirect('admin/review');
 	}
         public function reviews()
@@ -461,26 +461,26 @@ class admin extends CI_Controller {
                 }
                 else 
                     {
-                    $result['data']=  $this->adminm->feed_datass();
+                    $result['data']=  $this->Studio->feed_datass();
 		$this->load->view('admin/reviews',$result);
                     }
 	}
         public function bill()
 	{
-                $result['data']=  $this->adminm->select_bill();
+                $result['data']=  $this->Studio->select_bill();
 		$this->load->view('admin/billing',$result);
 	}
         
         public function delete_bill()
 	{
                 $id=  $this->input->get('q');
-                $this->adminm->delete_bill($id);
+                $this->Studio->delete_bill($id);
 		redirect('admin/bill');
 	}
          public function edit_car()
 	{
                 $id=  $this->input->get('q');
-                $result['data']=  $this->adminm->edit_car($id);
+                $result['data']=  $this->Studio->edit_car($id);
 		$this->load->view('admin/edit_car',$result);
 	}
         public function up_car()
@@ -506,13 +506,13 @@ class admin extends CI_Controller {
                 $filetype=  strtolower(pathinfo($target_path,PATHINFO_EXTENSION));
                 if($filetype!='jpg'&& $filetype!='png')
                 {
-                    $this->adminm->update_car($con,$maker,$model,$trans,$year,$ft,$ecc,$door,$seat,$price,$id);
+                    $this->Studio->update_car($con,$maker,$model,$trans,$year,$ft,$ecc,$door,$seat,$price,$id);
 		redirect('admin/view_car');
                 }  
                 else {
                 
                 move_uploaded_file($temp_name, $target_path);
-		$this->adminm->update_car_img($con,$maker,$model,$trans,$year,$ft,$ecc,$door,$seat,$price,$file_name,$id);
+		$this->Studio->update_car_img($con,$maker,$model,$trans,$year,$ft,$ecc,$door,$seat,$price,$file_name,$id);
 		redirect('admin/view_car');
                     }   
                 }
@@ -521,7 +521,7 @@ class admin extends CI_Controller {
         public function edit_team()
 	{
                 $id=  $this->input->get('q');
-                $result['data']=  $this->adminm->edit_team($id);
+                $result['data']=  $this->Studio->edit_team($id);
 		$this->load->view('admin/edit_team',$result);
 	}
         public function up_team()
@@ -546,7 +546,7 @@ class admin extends CI_Controller {
                 $filetype=  strtolower(pathinfo($target_path,PATHINFO_EXTENSION));
                 if($filetype!='jpg'&& $filetype!='png')
                 {
-                $this->adminm->update_team($name,$uname,$email,$pn,$age,$post,$pwd,$cpwd,$addr,$id);
+                $this->Studio->update_team($name,$uname,$email,$pn,$age,$post,$pwd,$cpwd,$addr,$id);
 		redirect('admin/view_team');
                 }
                 else {
@@ -561,7 +561,7 @@ class admin extends CI_Controller {
         public function edit_dest()
 	{
                 $id=  $this->input->get('q');
-                $result['data']=  $this->adminm->edit_dest($id);
+                $result['data']=  $this->Studio->edit_dest($id);
 		$this->load->view('admin/edit_dest',$result);
 	}
         public function up_dest()
@@ -580,13 +580,13 @@ class admin extends CI_Controller {
                 $filetype=  strtolower(pathinfo($target_path,PATHINFO_EXTENSION));
                 if($filetype!='jpg'&& $filetype!='png'&& $filetype!='jpeg')
                 {
-                   $this->adminm->update_dest($city,$state,$descr,$id);
+                   $this->Studio->update_dest($city,$state,$descr,$id);
                     redirect('admin/view_dest'); 
                 }
                 else {
                 
                 move_uploaded_file($temp_name, $target_path);
-		$this->adminm->update_dest_img($city,$state,$descr,$file_name,$id);
+		$this->Studio->update_dest_img($city,$state,$descr,$file_name,$id);
                 redirect('admin/view_dest');
                     }   
                 }
@@ -595,7 +595,7 @@ class admin extends CI_Controller {
         public function edit_acc()
 	{
                 $id=  $this->input->get('q');
-                $result['data']=  $this->adminm->edit_acc($id);
+                $result['data']=  $this->Studio->edit_acc($id);
 		$this->load->view('admin/edit_acc',$result);
 	}
         public function up_acc()
@@ -614,13 +614,13 @@ class admin extends CI_Controller {
                 $filetype=  strtolower(pathinfo($target_path,PATHINFO_EXTENSION));
                 if($filetype!='jpg'&& $filetype!='png')
                 {
-                   $this->adminm->update_acc($name,$price,$com,$id);
+                   $this->Studio->update_acc($name,$price,$com,$id);
                     redirect('admin/view_acc'); 
                 }
                 else {
                 
                 move_uploaded_file($temp_name, $target_path);
-		$this->adminm->update_acc_img($name,$price,$com,$file_name,$id);
+		$this->Studio->update_acc_img($name,$price,$com,$file_name,$id);
                 redirect('admin/view_acc');
                     }   
                 }
@@ -629,7 +629,7 @@ class admin extends CI_Controller {
         public function edit_coupon()
 	{
                 $id=  $this->input->get('q');
-                $result['data']=  $this->adminm->edit_coupon($id);
+                $result['data']=  $this->Studio->edit_coupon($id);
 		$this->load->view('admin/edit_coupon',$result);
 	}
         public function up_coupon()
@@ -641,58 +641,58 @@ class admin extends CI_Controller {
                 $code=$this->input->post('code');
 		$value=$this->input->post('value');
 		
-		$this->adminm->update_coupon($code,$value,$id);
+		$this->Studio->update_coupon($code,$value,$id);
 		redirect('admin/view_coupon');
 		}  
         }
          public function car()
 	{
              $id=  $this->input->get('q');
-             $result['data']=  $this->adminm->car($id);
+             $result['data']=  $this->Studio->car($id);
              $this->load->view('admin/car',$result);
 	}
          public function dest()
 	{
                 $id=  $this->input->get('q');
-                $result['data']=  $this->adminm->dest($id);
+                $result['data']=  $this->Studio->dest($id);
 		$this->load->view('admin/dest',$result);
 	}
          public function team()
 	{       
                 $id=  $this->input->get('q');
-                $result['data']=  $this->adminm->team($id);
+                $result['data']=  $this->Studio->team($id);
 		$this->load->view('admin/team',$result);
 	}
         public function delete_car()
         {
             $id=$this->input->get('q');
             
-	$this->adminm->delete_car($id);
+	$this->Studio->delete_car($id);
         
 	redirect('admin/view_car');
         }
         public function delete_team()
         {
             $id=$this->input->get('q');
-	$this->adminm->delete_team($id);
+	$this->Studio->delete_team($id);
 	redirect('admin/view_team');
         }
          public function delete_dest()
         {
             $id=$this->input->get('q');
-	$this->adminm->delete_dest($id);
+	$this->Studio->delete_dest($id);
 	redirect('admin/view_dest');
         }
         public function delete_acc()
         {
             $id=$this->input->get('q');
-	$this->adminm->delete_acc($id);
+	$this->Studio->delete_acc($id);
 	redirect('admin/view_acc');
         }
         public function delete_coupon()
         {
             $id=$this->input->get('q');
-	$this->adminm->delete_coupon($id);
+	$this->Studio->delete_coupon($id);
 	redirect('admin/view_coupon');
         }
         
