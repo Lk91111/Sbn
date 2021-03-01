@@ -15,4 +15,4 @@ $autoload['config'] = array();
 
 $autoload['language'] = array();
 
-$autoload['model'] = array('Studio','adminm');
+$autoload['model'] = array('Studio','Adminm');
