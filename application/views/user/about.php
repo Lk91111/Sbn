@@ -26,18 +26,19 @@
                             <h2 class="annie-heading animate-box" data-animate-effect="fadeInUp">About Me</h2> </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 animate-box" data-animate-effect="fadeInUp"> <img src="<?=  base_url()?>assets/images/slider/01.jpg" class="img-fluid mb-30" alt="annie"> </div>
+                        <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">  </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12 animate-box" data-animate-effect="fadeInUp"> <span class="heading-meta">Photographer</span>
+                        <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
                             <h3 class="annie-about-heading">SBN</h3>
+                            
                             <p>We specialize in wedding photography, corporate, family and senior portraits, often traveling to your destination to capture the perfect moment in the perfect place. We will be there with you every step of the way to guarantee your special moments are captured for all time.
 
 To us photography is about people being real and then letting us paint a picture of that moment to remember it forever. This is the story that matters most: real people, real stories, real moments.</p>
                             <p>We are incredibly blessed to have a team of photographers who work with us on any given weekend. Please take a few minutes to get to know us.
 
 We would love to visit with you by phone or in person and talk about your wedding, event, portrait session or video project. Please reach out to us through the Contact Page. </p>
-                            <p><img src="<?=  base_url()?>assets/images/sign.png" class="annie-about-signature" alt="annie"></p>
+                            
                         </div>
                     </div>
                 </div>
