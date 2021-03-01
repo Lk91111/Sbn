@@ -131,7 +131,7 @@ class admin extends CI_Controller {
             {
                 $file_name=$_FILES['img']['name'];
                 $temp_name=$_FILES['img']['tmp_name'];
-                $target_path='C:/xampp/htdocs/xpedia/assets/images/dest/'.$file_name;
+                $target_path='C:/xampp/htdocs/Sbn/assets/images/dest/'.$file_name;
                 $filetype=  strtolower(pathinfo($target_path,PATHINFO_EXTENSION));
                 if($filetype!='jpg'&& $filetype!='png'&& $filetype!='jpeg')
                 {
@@ -355,10 +355,10 @@ class admin extends CI_Controller {
         public function view_dest()
 	{
 		$this->load->model('Adminm');
-            $result['products_data']=$this->adminm->select_dest();
+            $result['products_data']=$this->Adminm->select_dest();
 	if(!isset($_SESSION['uname']))
                 {
-                    $errr['msg']=NULL;
+                    $errr['msg']=NULL;  
                     $this->load->view('admin/signin',$errr);
                 }
                 else 
