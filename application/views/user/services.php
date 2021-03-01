@@ -29,7 +29,7 @@
                     <div class="row">
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
                             <div class="annie-services">
-                                <a href="services-post.html"> <img src="<?=  base_url()?>assets/images/services/02.jpg" class="img-fluid" alt="">
+                                <a href="services-post.html"> <img src="<?=  base_url()?>assets/images/services/bcc.jpg" class="img-fluid" alt="">
                                     <div class="desc">
                                         <div class="con">
                                             <div class="annie-icon"> <i class="fa fa-camera"></i> </div>
@@ -40,22 +40,22 @@
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
                             <div class="annie-services">
-                                <a href="services-post.html"> <img src="<?=  base_url()?>assets/images/services/06.jpg" class="img-fluid" alt="">
+                                <a href="services-post.html"> <img src="<?=  base_url()?>assets/images/services/v.jpg" class="img-fluid" alt="">
                                     <div class="desc">
                                         <div class="con">
                                             <div class="annie-icon"> <i class="fa fa-camera"></i> </div>
-                                            <h3><a href="#">Portrait Photography</a></h3> </div>
+                                            <h3><a href="#">Portrait </a></h3> </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
                             <div class="annie-services">
-                                <a href="services-post.html"> <img src="<?=  base_url()?>assets/images/services/05.jpg" class="img-fluid" alt="">
+                                <a href="services-post.html"> <img src="<?=  base_url()?>assets/images/services/jh.jpg" class="img-fluid" alt="">
                                     <div class="desc">
                                         <div class="con">
                                             <div class="annie-icon"> <i class="fa fa-camera"></i> </div>
-                                            <h3><a href="#">Travel Photography</a></h3> </div>
+                                            <h3><a href="#">Travel</a></h3> </div>
                                     </div>
                                 </a>
                             </div>
@@ -66,29 +66,29 @@
                                     <div class="desc">
                                         <div class="con">
                                             <div class="annie-icon"> <i class="fa fa-camera"></i> </div>
-                                            <h3><a href="#">Product Photography</a></h3> </div>
+                                            <h3><a href="#">Product </a></h3> </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
                             <div class="annie-services">
-                                <a href="services-post.html"> <img src="<?=  base_url()?>assets/images/services/01.jpg" class="img-fluid" alt="">
+                                <a href="services-post.html"> <img src="<?=  base_url()?>assets/images/services/abbb.jpg" class="img-fluid" alt="">
                                     <div class="desc">
                                         <div class="con">
                                             <div class="annie-icon"> <i class="fa fa-camera"></i> </div>
-                                            <h3><a href="#">Fashion Photography</a></h3> </div>
+                                            <h3><a href="#">Fashion </a></h3> </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
                             <div class="annie-services">
-                                <a href="services-post.html"> <img src="<?=  base_url()?>assets/images/services/03.jpg" class="img-fluid" alt="">
+                                <a href="services-post.html"> <img src="<?=  base_url()?>assets/images/services/sugaa.jpg" class="img-fluid" alt="">
                                     <div class="desc">
                                         <div class="con">
                                             <div class="annie-icon"> <i class="fa fa-camera"></i> </div>
-                                            <h3><a href="#">Sport Photography</a></h3> </div>
+                                            <h3><a href="#">Sport</a></h3> </div>
                                     </div>
                                 </a>
                             </div>
@@ -113,7 +113,7 @@
                     <div class="row">
                 <div class="col-md-4">
                     <div class="price-box animate-box" data-animate-effect="fadeInUp">
-                        <div class="price-box-inner img-grayscale" style="background-image: url(<?=  base_url()?>assets/images/pricing/1.jpg)">
+                        <div class="price-box-inner img-grayscale" style="background-image: url(<?=  base_url()?>assets/images/pricing/s.jpg)">
                             <ul>
                                 <li class="pricing-title">
                                     <h3 class="pricing-pt-title">Standart</h3>
@@ -133,7 +133,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="price-box animate-box" data-animate-effect="fadeInUp">
-                        <div class="price-box-inner" style="background-image: url(<?=  base_url()?>assets/images/pricing/2.jpg)">
+                        <div class="price-box-inner" style="background-image: url(<?=  base_url()?>assets/images/pricing/i.jpg)">
                             <ul>
                                 <li class="pricing-title">
                                     <h3 class="pricing-pt-title">Premium</h3>
@@ -153,7 +153,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="price-box animate-box" data-animate-effect="fadeInUp">
-                        <div class="price-box-inner" style="background-image: url(<?=  base_url()?>assets/images/pricing/3.jpg)">
+                        <div class="price-box-inner" style="background-image: url(<?=  base_url()?>assets/images/pricing/f.jpg)">
                             <ul>
                                 <li class="pricing-title">
                                     <h3 class="pricing-pt-title">Platinum</h3>
