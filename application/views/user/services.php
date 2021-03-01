@@ -29,7 +29,7 @@
                     <div class="row">
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
                             <div class="annie-services">
-                                <a href="services-post.html"> <img src="<?=  base_url()?>assets/images/services/bcc.jpg" class="img-fluid" alt="">
+                                <a href="#"> <img src="<?=  base_url()?>assets/images/services/bcc.jpg" class="img-fluid" alt="">
                                     <div class="desc">
                                         <div class="con">
                                             <div class="annie-icon"> <i class="fa fa-camera"></i> </div>
@@ -40,7 +40,7 @@
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
                             <div class="annie-services">
-                                <a href="services-post.html"> <img src="<?=  base_url()?>assets/images/services/v.jpg" class="img-fluid" alt="">
+                                <a href="#"> <img src="<?=  base_url()?>assets/images/services/v.jpg" class="img-fluid" alt="">
                                     <div class="desc">
                                         <div class="con">
                                             <div class="annie-icon"> <i class="fa fa-camera"></i> </div>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
                             <div class="annie-services">
-                                <a href="services-post.html"> <img src="<?=  base_url()?>assets/images/services/jh.jpg" class="img-fluid" alt="">
+                                <a href="#"> <img src="<?=  base_url()?>assets/images/services/jh.jpg" class="img-fluid" alt="">
                                     <div class="desc">
                                         <div class="con">
                                             <div class="annie-icon"> <i class="fa fa-camera"></i> </div>
@@ -62,7 +62,7 @@
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
                             <div class="annie-services">
-                                <a href="services-post.html"> <img src="<?=  base_url()?>assets/images/services/04.jpg" class="img-fluid" alt="">
+                                <a href="#"> <img src="<?=  base_url()?>assets/images/services/04.jpg" class="img-fluid" alt="">
                                     <div class="desc">
                                         <div class="con">
                                             <div class="annie-icon"> <i class="fa fa-camera"></i> </div>
@@ -73,7 +73,7 @@
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
                             <div class="annie-services">
-                                <a href="services-post.html"> <img src="<?=  base_url()?>assets/images/services/abbb.jpg" class="img-fluid" alt="">
+                                <a href="#"> <img src="<?=  base_url()?>assets/images/services/abbb.jpg" class="img-fluid" alt="">
                                     <div class="desc">
                                         <div class="con">
                                             <div class="annie-icon"> <i class="fa fa-camera"></i> </div>
@@ -84,7 +84,7 @@
                         </div>
                         <div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
                             <div class="annie-services">
-                                <a href="services-post.html"> <img src="<?=  base_url()?>assets/images/services/sugaa.jpg" class="img-fluid" alt="">
+                                <a href="#"> <img src="<?=  base_url()?>assets/images/services/sugaa.jpg" class="img-fluid" alt="">
                                     <div class="desc">
                                         <div class="con">
                                             <div class="annie-icon"> <i class="fa fa-camera"></i> </div>
