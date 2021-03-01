@@ -32,41 +32,13 @@
                       
                         
                           <li>
-                            <a href="#" class="">
-                                <span class="nav-icon text-info">
-                                                                    <i data-feather="users">
-
-                                                                    </i>
-                                                                </span>
-                                <span class="nav-text">
-                                                                 Team</span>
-                                <span class="nav-caret">
-
-                                                                  </span>
-                            </a>
+                            
                             <ul class="nav-sub nav-mega">
                                 <li>
-                                    <a href="<?=  base_url('admin/add_team')?>" class="">
-                                         <span class="nav-icon text-info">
-                                                                    <i data-feather="plus">
-
-                                                                    </i>
-                                                                </span>
-                                        <span class="nav-text">
-                                                                            Add</span>
-                                    </a>
+                                   
                                 </li>
                                 <li>
-                                    <a href="<?=  base_url('admin/view_team')?>" class="">
-                                        <span class="nav-icon text-info">
-                                                                    <i data-feather="align-left">
-
-                                                                    </i>
-                                                                </span>
-                                        <span class="nav-text">
-                                            
-                                                                            View</span>
-                                    </a>
+                                   
                                 </li>
                                 
                         
