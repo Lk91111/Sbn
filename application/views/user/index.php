@@ -23,7 +23,7 @@
                 <div class="annie-hero js-fullheight">
                     <div class="flexslider js-fullheight">
                         <ul class="slides">
-                            <li style="background-image: url(<?=  base_url()?>assets/images/slider/01.jpg);">
+                            <li style="background-image: url(<?=  base_url()?>assets/images/slider/abcd.jpg);">
                                 <div class="overlay"></div>
                                 <div class="container-fluid">
                                     <div class="row">
@@ -37,7 +37,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li style="background-image: url(<?=  base_url()?>assets/images/slider/02.jpg);">
+                            <li style="background-image: url(<?=  base_url()?>assets/images/slider/abc.jpg);">
                                 <div class="overlay"></div>
                                 <div class="container-fluid">
                                     <div class="row">
