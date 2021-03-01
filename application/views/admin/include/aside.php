@@ -6,7 +6,7 @@
                 <!-- brand -->
                 <a href="" class="navbar-brand">
                     
-                    <img src="<?=  base_url()?>adm_assets/img/logo.png" alt="...">
+                    <img src="<?=  base_url()?>adm_assets/img/aaa.png" alt="...">
                     
                 </a>
                 <!-- / brand -->
@@ -81,7 +81,7 @@
                                                                     </i>
                                                                 </span>
                                 <span class="nav-text">
-                                                                 Destinations</span>
+                                                                 Gallery</span>
                                 <span class="nav-caret">
 
                                                                   </span>
