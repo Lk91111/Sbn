@@ -43,7 +43,7 @@
                         <div class="col-md-6 animate-box" data-animate-effect="fadeInUp">
                             <h3 class="annie-contact-heading">Contact Form</h3>
                             <p>Interested to work with us?</p>
-                            <form method="post" class="row">
+                            <form method="post" class="row" action="<?=base_url('Photo/contact')?>">
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <input  name="name" type="text" class="form-control" placeholder="Name" required> </div>
