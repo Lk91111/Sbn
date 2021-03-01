@@ -294,63 +294,7 @@
                            
                         </ul>
                         </li>
-                         <li>
-                            <a href="#" class="">
-                                <span class="nav-icon text-warning">
-                                                                    <i data-feather="tag">
-
-                                                                    </i>
-                                                                </span>
-                                <span class="nav-text ">
-                                                                 Coupons</span>
-                                <span class="nav-caret">
-
-                                                                  </span>
-                            </a>
-                            <ul class="nav-sub nav-mega">
-                                <li>
-                                    <a href="<?=  base_url('admin/add_coupon')?>" class="">
-                                         <span class="nav-icon text-info">
-                                                                    <i data-feather="plus">
-
-                                                                    </i>
-                                                                </span>
-                                        <span class="nav-text">
-                                                                            Add</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="<?= base_url('admin/view_coupon')?>" class="">
-                                        <span class="nav-icon text-info">
-                                                                    <i data-feather="align-left">
-
-                                                                    </i>
-                                                                </span>
-                                        <span class="nav-text">
-                                                                            View</span>
-                                    </a>
-                                </li>
-                                
-                        
-                           
-                        </ul>
-                        </li>
-                    </ul>
-                    <ul class="nav">
-                        <li class="nav-header hidden-folded">
-                            <span class="text-muted">
-                                                            Billing</span>
-                        </li>
-                       <li>
-                            <a href="<?=  base_url('admin/bill')?>">
-                                <span class="nav-icon text-primary">
-                                            <i data-feather="edit">
-                                            </i>
-                                        </span>
-                                <span class="nav-text">
-                                         Billing</span>
-                            </a>
-                        </li>
+                       
                         <li class="nav-header hidden-folded">
                             <span class="text-muted">
                                                             Personal</span>
