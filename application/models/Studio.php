@@ -281,7 +281,7 @@ class Studio extends CI_Controller {
     }
     public function feed_datas()
     {
-        $query=$this->db->query("select * from review");
+        $query=$this->db->query("select * from feed");
         return $query->result();
     }
     public function feed_datass()
