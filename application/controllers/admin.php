@@ -76,7 +76,7 @@ class admin extends CI_Controller {
             {
                 $file_name=$_FILES['img']['name'];
                 $temp_name=$_FILES['img']['tmp_name'];
-                $target_path='C:/xampp/htdocs/xpedia/assets/images/team/'.$file_name;
+                $target_path='C:/xampp/htdocs/Sbn/assets/images/team/'.$file_name;
                 $filetype=  strtolower(pathinfo($target_path,PATHINFO_EXTENSION));
                 if($filetype!='jpg'&& $filetype!='png')
                 {
@@ -131,7 +131,7 @@ class admin extends CI_Controller {
             {
                 $file_name=$_FILES['img']['name'];
                 $temp_name=$_FILES['img']['tmp_name'];
-                $target_path='C:/xampp/htdocs/xpedia/assets/images/dest/'.$file_name;
+                $target_path='C:/xampp/htdocs/Sbn/assets/images/dest/'.$file_name;
                 $filetype=  strtolower(pathinfo($target_path,PATHINFO_EXTENSION));
                 if($filetype!='jpg'&& $filetype!='png'&& $filetype!='jpeg')
                 {
@@ -255,7 +255,7 @@ class admin extends CI_Controller {
             {
                 $file_name=$_FILES['img']['name'];
                 $temp_name=$_FILES['img']['tmp_name'];
-                $target_path='C:/xampp/htdocs/xpedia/assets/images/acc/'.$file_name;
+                $target_path='C:/xampp/htdocs/Sbn/assets/images/acc/'.$file_name;
                 $filetype=  strtolower(pathinfo($target_path,PATHINFO_EXTENSION));
                 if($filetype!='jpg'&& $filetype!='png')
                 {
@@ -297,7 +297,7 @@ class admin extends CI_Controller {
             {
                 $file_name=$_FILES['img']['name'];
                 $temp_name=$_FILES['img']['tmp_name'];
-                $target_path='C:/xampp/htdocs/xpedia/assets/images/car/'.$file_name;
+                $target_path='C:/xampp/htdocs/Sbn/assets/images/car/'.$file_name;
                 $filetype=  strtolower(pathinfo($target_path,PATHINFO_EXTENSION));
                 if($filetype!='jpg'&& $filetype!='png')
                 {
@@ -531,7 +531,7 @@ class admin extends CI_Controller {
 		{
                 $file_name=$_FILES['img']['name'];
                 $temp_name=$_FILES['img']['tmp_name'];
-                $target_path='C:/xampp/htdocs/xpedia/assets/images/team/'.$file_name;
+                $target_path='C:/xampp/htdocs/Sbn/assets/images/team/'.$file_name;
                 $name=$this->input->post('name');
                 $uname=$this->input->post('uname');
 		$email=$this->input->post('email');
@@ -571,7 +571,7 @@ class admin extends CI_Controller {
 		{
                 $file_name=$_FILES['img']['name'];
                 $temp_name=$_FILES['img']['tmp_name'];
-                $target_path='C:/xampp/htdocs/xpedia/assets/images/dest/'.$file_name;
+                $target_path='C:/xampp/htdocs/Sbn/assets/images/dest/'.$file_name;
                 $city=$this->input->post('city');
                 $state=$this->input->post('state');
 		$descr=$this->input->post('descr');
@@ -605,7 +605,7 @@ class admin extends CI_Controller {
 		{
                 $file_name=$_FILES['img']['name'];
                 $temp_name=$_FILES['img']['tmp_name'];
-                $target_path='C:/xampp/htdocs/xpedia/assets/images/acc/'.$file_name;
+                $target_path='C:/xampp/htdocs/Sbn/assets/images/acc/'.$file_name;
                 $name=$this->input->post('name');
                 $price=$this->input->post('price');
 		$com=$this->input->post('com');
