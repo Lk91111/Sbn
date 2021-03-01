@@ -36,7 +36,7 @@ class Studio extends CI_Controller {
     }
      public function add_dest($v1,$v2,$v3,$v4)
     {
-        $data=array('img'=>$v4,'city'=>$v1,'state'=>$v2,'descr'=>$v3);
+        $data=array('img'=>$v4,'city'=>$v1,'serv'=>$v2,'descr'=>$v3);
         $this->db->insert('destination',$data);
     }
     public function add_cont($v1,$v2,$v3)
@@ -151,7 +151,7 @@ class Studio extends CI_Controller {
     }
     public function update_dest($city,$state,$descr,$id)
 	{
-	$query=$this->db->query("update destination set city='$city',state='$state',descr='$descr' where id='$id'");
+	$query=$this->db->query("update destination set city='$city',serv='$state',descr='$descr' where id='$id'");
         
        }
        public function update_dest_img($city,$state,$descr,$img,$id)
