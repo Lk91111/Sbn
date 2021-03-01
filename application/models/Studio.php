@@ -321,7 +321,7 @@ class Studio extends CI_Controller {
     }
      public function delete_review($id)
     {
-        $query=$this->db->query("delete from review where id='$id'");
+        $query=$this->db->query("delete from feed where id='$id'");
         return $query;
     }
     public function tick_review($id)
@@ -333,7 +333,7 @@ class Studio extends CI_Controller {
     }
     public function delete_reviews($id)
     {
-        $query=$this->db->query("insert into feed(id,name,img,msg,link) values((select id from feed where id='$id'),(select name from feed where id='$id'),(select img from reviews where id='$id'),(select msg from reviews where id='$id'),(select link from reviews where id='$id'))");
+        $query=$this->db->query("insert into feed(id,name,img,msg,link) values((select id from reviews where id='$id'),(select name from feed where id='$id'),(select img from reviews where id='$id'),(select msg from reviews where id='$id'),(select link from reviews where id='$id'))");
         $quer=$this->db->query("delete from reviews where id='$id'");
         return $query;
         return $quer;
