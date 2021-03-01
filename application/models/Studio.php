@@ -269,7 +269,7 @@ class Studio extends CI_Controller {
         $data=array('bacid'=>$bacid,'fname'=>$fname,'lname'=>$lname,'country'=>$country,'city'=>$city,'addr'=>$addr,'pn'=>$pn,'email'=>$email,'price'=>$price,'coupon'=>$code);
         $this->db->insert('billing',$data);
     }
-    public function add_feed($cid,$name,$email,$title,$com,$star)
+    public function add_feedb($cid,$name,$email,$title,$com,$star)
     {
         $data=array('cid'=>$cid,'name'=>$name,'email'=>$email,'title'=>$title,'com'=>$com,'star'=>$star);
         $this->db->insert('review',$data);
