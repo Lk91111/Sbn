@@ -188,7 +188,7 @@ class admin extends CI_Controller {
 	}
          public function view_con()
 	{
-             $result['products_data']=$this->adminm->select_con();
+             $result['products_data']=$this->Studio->select_con();
              if(!isset($_SESSION['uname']))
                 {
                     $errr['msg']=NULL;
