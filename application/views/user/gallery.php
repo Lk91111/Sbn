@@ -34,7 +34,7 @@
 				{
 			        ?>
                                 <div class="col-12 col-md-6 col-lg-4 animate-box" data-animate-effect="fadeInUp">
-                                    <a href="<?=  base_url()?>assets/images/dest/<?=$photo->img?>" class="d-block annie-photo-item" data-caption="Potrait Photo" data-fancybox="gallery"> <img src="images/gallery/01.jpg" alt="Image" class="img-fluid">
+                                    <a href="<?=  base_url()?>assets/images/dest/<?=$photo->img?>" class="d-block annie-photo-item" data-caption="Potrait Photo" data-fancybox="gallery"> <img src="<?=base_url()?>assets/images/dest/<?=$photo->img?>" alt="Image" class="img-fluid">
                                     </a>
                                 </div>
                                 <?php
