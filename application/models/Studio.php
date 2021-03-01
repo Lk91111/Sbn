@@ -156,7 +156,7 @@ class Studio extends CI_Controller {
        }
        public function update_dest_img($city,$state,$descr,$img,$id)
 	{
-	$query=$this->db->query("update destination set city='$city',state='$state',descr='$descr',img='$img' where id='$id'");
+	$query=$this->db->query("update destination set city='$city',serv='$state',descr='$descr',img='$img' where id='$id'");
         
        }
     public function select_acc()
