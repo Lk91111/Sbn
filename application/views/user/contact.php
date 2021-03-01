@@ -26,13 +26,9 @@
                             <h2 class="annie-heading animate-box" data-animate-effect="fadeInUp">Contact Us</h2> </div>
                     </div>
                     <!-- Map Section-->
-                    <div class="annie-map-section">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 animate-box" data-animate-effect="fadeInUp">
-                                <div id="annie-contactMap"></div>
-                            </div>
-                        </div>
-                    </div>
+                    </br>
+                    </br>                 
+ 
                     <div class="row">
                         <!-- Contact Info -->
                         <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">
@@ -60,18 +56,24 @@
                                     <div class="form-group">
                                         <label for="style"> </label>
                                         <select name="serve" style="background-color: #1b1b1b; width:260px; color:#6c757d;">  
-                                                  <option value="Select">Services</option>}  
-                                                   <option value="Vineet">Vineet Saini</option>  
-                                                   
+                                                  
+                                                   <option value="wedding">Wedding Shoot</option>  
+                                                    <option value="Portrait">Portrait Photography</option> 
+                                                     <option value="Travel">Travel Photography</option> 
+                                                      <option value="Product">Product Photography</option> 
+                                                       <option value="Fashion">Fashion Photography</option> 
+                                                        <option value="Sport">Sport Photography</option> 
+                                                    
                                          </select>    </div>
                                 </div> 
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="serve">  </label>
                                          <select name="pack" style="background-color: #1b1b1b; width:260px;color:#6c757d;">  
-                                                  <option  value="Select">Packages</option>} 
-                                                   <option value="Vineet">Vineet Saini</option>  
-                                        
+                                                   
+                                                     <option value="standard">Standard</option> 
+                                                       <option value="Premium">Premium</option> 
+                                                          <option value="Patinum">Patinum</option> 
                                          </select>   </div>
                                 </div>
                                 <div class="col-sm-12">
