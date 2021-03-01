@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class adminm extends CI_Controller {
+class adminm extends CI_Model {
     public function add_team($v1,$v2,$v3,$v4,$v5,$v6,$v7,$v8,$v9,$v10)
     {
         $data=array('img'=>$v10,'name'=>$v1,'uname'=>$v2,'email'=>$v3,'pn'=>$v4,'age'=>$v5,'post'=>$v6,'pwd'=>$v7,'cpwd'=>$v8,'addr'=>$v9);
