@@ -34,7 +34,7 @@
                                                <input type="text" class="form-control" name="city" placeholder="Enter city" value="<?=$values->city?>"></div>
                                             <div class="form-group">
                                                 <label class="text-muted" >State</label>
-                                                <input type="text" class="form-control" name="serv"  placeholder="Enter state" value="<?=$values->state?>"></div>
+                                                <input type="text" class="form-control" name="state"  placeholder="Enter state" value="<?=$values->serv?>"></div>
                                             <div class="form-group">
                                                 <label class="text-muted" >Description</label>
                                                 <input type="text" class="form-control" name="descr"  placeholder="Enter description" value="<?=$values->descr?>"></div>
