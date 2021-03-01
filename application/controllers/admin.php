@@ -361,7 +361,7 @@ class admin extends CI_Controller {
                 }
                 else 
                     {	
-            $this->load->view('admin/view-dest',$result);
+            $this->load->view('admin/view_dest',$result);
                     }
 	}
         public function view_acc()
