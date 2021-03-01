@@ -7,7 +7,7 @@
             <div class="p-4 d-flex flex-column h-100">
                 <!-- brand -->
                 <a href="#" class="navbar-brand align-self-center">
-                   <img src="<?=  base_url()?>adm_assets/img/logo.png" alt="...">
+                   <img src="<?=  base_url()?>adm_assets/img/aaa.png" alt="...">
                 </a>
             </div>
             <div class="card">
