@@ -80,6 +80,6 @@ class loginc extends CI_Controller {
     public function logouts()
     {
         session_destroy();
-        redirect(base_url('userc'));
+        redirect(base_url('Photo'));
     }
 }
