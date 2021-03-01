@@ -43,7 +43,7 @@
                                             <th class="text-muted">Id</th>
                                             <th class="text-muted">Image</th>
                                             <th class="text-muted">City</th>
-                                            <th class="text-muted">State</th>
+                                            <th class="text-muted">Service</th>
                                             <th class="text-muted">Description</th>
                                             <th class="text-muted">Date </th>
                                             <th class="text-muted">Action</th>
