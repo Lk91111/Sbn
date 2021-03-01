@@ -28,36 +28,36 @@
                     <div class="row">
                         <div class="col-md-6 animate-box" data-animate-effect="fadeInUp">
                             <div class="blog-entry">
-                                <a href="post.html" class="blog-img"><img src="<?=  base_url()?>assets/images/gallery/01.jpg" class="img-fluid" alt=""></a>
-                                <div class="desc"> <span>Sep 25, 2021 | Fashion</span>
-                                    <h3><a href="post.html">Model Viverra Convallis</a></h3>
+                                <a href="post.html" class="blog-img"><img src="<?=  base_url()?>assets/images/gallery/as.jpg" class="img-fluid" alt=""></a>
+                                <div class="desc"> <span>Sep 2, 2020 | Cartoon editing</span>
+                                    <h3><a href="post.html">Demon Slayer</a></h3>
                                     <p>Fusce suscipit, ante a hendrerit ullamcorper, risus nisl cursus purus, sit amet viverra ante nulla vel justo. Morbi justo erat, posuere vel libero bibendum convallis enim.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 animate-box" data-animate-effect="fadeInUp">
                             <div class="blog-entry">
-                                <a href="post.html" class="blog-img"><img src="<?=  base_url()?>assets/images/gallery/02.jpg" class="img-fluid" alt=""></a>
-                                <div class="desc"> <span>Sep 23, 2021 | Wedding</span>
-                                    <h3><a href="post.html">Alique Wedding Morbi</a></h3>
+                                <a href="post.html" class="blog-img"><img src="<?=  base_url()?>assets/images/gallery/ae.jpg" class="img-fluid" alt=""></a>
+                                <div class="desc"> <span>Sep 13, 2020 | Anime editing</span>
+                                    <h3><a href="post.html">Attack On Titan</a></h3>
                                     <p>Fusce suscipit, ante a hendrerit ullamcorper, risus nisl cursus purus, sit amet viverra ante nulla vel justo. Morbi justo erat, posuere vel libero bibendum convallis enim.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 animate-box" data-animate-effect="fadeInUp">
                             <div class="blog-entry">
-                                <a href="post.html" class="blog-img"><img src="<?=  base_url()?>assets/images/gallery/11.jpg" class="img-fluid" alt=""></a>
-                                <div class="desc"> <span>Sep 20, 2021 | Family</span>
-                                    <h3><a href="post.html">Pharetra Molesti Neque</a></h3>
+                                <a href="post.html" class="blog-img"><img src="<?=  base_url()?>assets/images/gallery/ac.jpg" class="img-fluid" alt=""></a>
+                                <div class="desc"> <span>Sep 23, 2020 | Animated</span>
+                                    <h3><a href="post.html">Your name</a></h3>
                                     <p>Fusce suscipit, ante a hendrerit ullamcorper, risus nisl cursus purus, sit amet viverra ante nulla vel justo. Morbi justo erat, posuere vel libero bibendum convallis enim.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 animate-box" data-animate-effect="fadeInUp">
                             <div class="blog-entry">
-                                <a href="post.html" class="blog-img"><img src="<?=  base_url()?>assets/images/gallery/10.jpg" class="img-fluid" alt=""></a>
-                                <div class="desc"> <span>Sep 18, 2021 | Bride</span>
-                                    <h3><a href="post.html">Bibendum Bride Ante</a></h3>
+                                <a href="post.html" class="blog-img"><img src="<?=  base_url()?>assets/images/gallery/ab.jpg" class="img-fluid" alt=""></a>
+                                <div class="desc"> <span>Sep 28, 2020 | Paradox editing</span>
+                                    <h3><a href="post.html">DARK</a></h3>
                                     <p>Fusce suscipit, ante a hendrerit ullamcorper, risus nisl cursus purus, sit amet viverra ante nulla vel justo. Morbi justo erat, posuere vel libero bibendum convallis enim.</p>
                                 </div>
                             </div>
