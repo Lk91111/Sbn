@@ -353,6 +353,7 @@ class admin extends CI_Controller {
 	}
         public function view_dest()
 	{
+		$this->load->model('adminm');
             $result['products_data']=$this->adminm->select_dest();
 	if(!isset($_SESSION['uname']))
                 {
