@@ -326,14 +326,14 @@ class Studio extends CI_Controller {
     }
     public function tick_review($id)
     {
-        $query=$this->db->query("insert into reviews(cid,name,email,title,com,star) values((select cid from review where id='$id'),(select name from review where id='$id'),(select email from review where id='$id'),(select title from review where id='$id'),(select com from review where id='$id'),(select star from review where id='$id'))");
-        $quer=$this->db->query("delete from review where id='$id'");
+        $query=$this->db->query("insert into reviews(id,name,img,msg,link) values((select id from feed where id='$id'),(select name from feed where id='$id'),(select img from feed where id='$id'),(select msg from feed where id='$id'),(select link from feed where id='$id'))");
+        $quer=$this->db->query("delete from feed where id='$id'");
         return $query;
         return $quer;
     }
     public function delete_reviews($id)
     {
-        $query=$this->db->query("insert into review(cid,name,email,title,com,star) values((select cid from reviews where id='$id'),(select name from reviews where id='$id'),(select email from reviews where id='$id'),(select title from reviews where id='$id'),(select com from reviews where id='$id'),(select star from reviews where id='$id'))");
+        $query=$this->db->query("insert into feed(id,name,img,msg,link) values((select id from feed where id='$id'),(select name from feed where id='$id'),(select img from reviews where id='$id'),(select msg from reviews where id='$id'),(select link from reviews where id='$id'))");
         $quer=$this->db->query("delete from reviews where id='$id'");
         return $query;
         return $quer;
