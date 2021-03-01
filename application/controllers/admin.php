@@ -143,7 +143,7 @@ class admin extends CI_Controller {
                     }
                     else {
                         $city=  $this->input->post('city');
-                        $state=  $this->input->post('state');
+                        $state=  $this->input->post('serv');
                         $descr=  $this->input->post('descr');
                         move_uploaded_file($temp_name, $target_path);
                         $this->Studio->add_dest($city,$state,$descr,$file_name);
