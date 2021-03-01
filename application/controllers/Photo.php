@@ -42,7 +42,8 @@ class Photo extends CI_Controller {
 	}
            public function gallery()
 	{
-		$this->load->view('user/gallery');
+		   $result['gallery']=$this->Studio->select_dest();
+		$this->load->view('user/gallery',$result);
 	}
           public function masonry()
 	{
