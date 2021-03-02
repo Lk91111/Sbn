@@ -55,25 +55,37 @@ class Photo extends CI_Controller {
 	}
         public function contact()
         {
+		//For sending email
          
-		 if($this->input->post('submit'))
+// 		 if($this->input->post('submit'))
+//             {
+//                $name=  $this->input->post('name');
+//                $mail=  $this->input->post('mail');
+//                $serve=  $this->input->post('serve');
+//                $pack=  $this->input->post('pack');
+// 		$msg=  $this->input->post('msg');
+               
+//                $this->load->library('email');
+
+//             $this->email->from(''.$mail.'', ''.$name.'');
+//             $this->email->to('karansingh4183@gmail.com');
+            
+//             $this->email->subject('Photo suit request');
+//             $this->email->message('Please book a photosuit for'.$serve.' and the package of '.$pack.''.$msg.'');
+
+//             $this->email->send();
+//             }
+		
+		if($this->input->post('submit'))
             {
                $name=  $this->input->post('name');
                $mail=  $this->input->post('mail');
                $serve=  $this->input->post('serve');
                $pack=  $this->input->post('pack');
 		$msg=  $this->input->post('msg');
-               
-               $this->load->library('email');
-
-            $this->email->from(''.$mail.'', ''.$name.'');
-            $this->email->to('karansingh4183@gmail.com');
-            
-            $this->email->subject('Photo suit request');
-            $this->email->message('Please book a photosuit for'.$serve.' and the package of '.$pack.''.$msg.'');
-
-            $this->email->send();
-            }
+		$this->Studio->add_contact($name,$mail,$serve,$pack,$msg);
+			redirect('contact');
+		}
              $this->load->view('user/contact');
 	
         }
